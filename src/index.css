@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-border {
+  -webkit-box-shadow: inset 5px 10px 5px -7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 5px 10px 5px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 5px 10px 5px -7px rgba(0, 0, 0, 0.5);
+}
+
+.four-pointed-star {
+  position: relative;
+  width: 1em;
+  height: 1em;
+}
+
+.four-pointed-star:before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1.15em;
+  transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.sun {
+  box-shadow: 0 0 20px 3px rgba(255, 255, 0, 0.5);
+}
